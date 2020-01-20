@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Handlebars</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form th:action="@{/handles}" method="get">
+		<div class="container">
+    	<h1>Create Handlebar Configuration</h1>
+    	<p>Get handlebar Types</p>
+    	<hr>
+    	<p th:text="'Available types of material: ' + ${types} + '!'" />
+    	<label for="last_name"><b>Gears: </b></label>
+    	<input type="text" placeholder="gear" name="gear" id="gear" required>
+    	<div class="clearfix">
+      		<button type="submit" class="button" value="submit">Submit</button>
+    	</div>
+ 		</div>
+	</form>
+</body>
+</html>

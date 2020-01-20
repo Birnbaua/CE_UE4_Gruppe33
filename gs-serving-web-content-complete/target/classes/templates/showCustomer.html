@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form th:action="@{/handlebars}" method="get">
+    	<p th:text="'User ' + ${name} + ' created!'" />
+    	<p>Click <a href="/handlebars" > here </a> to create your handlebar!</p>
+	</form>
+</body>
+</html>

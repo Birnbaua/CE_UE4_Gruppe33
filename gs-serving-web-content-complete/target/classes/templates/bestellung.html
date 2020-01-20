@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Handlebars</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form th:action="@{/}" method="get">
+		<div class="container">
+    	<h1>Create Handlebar Configuration</h1>
+    	<p>Get handlebar Types</p>
+    	<hr>
+    	<p th:text="'Status of Order: ' + ${order} + '!'" />
+    	<div class="clearfix">
+      		<button type="submit" class="button" value="submit">Back to Start</button>
+    	</div>
+ 		</div>
+	</form>
+</body>
+</html>
